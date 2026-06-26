@@ -19,43 +19,6 @@ This pipeline integrates GWAS effect sizes with genotype data to estimate the ge
 
 ---
 
-## Workflow
-
-```text
-GWAS Summary Statistics
-          │
-          ▼
- Filter Significant SNPs
-          │
-          ▼
- Load HapMap Genotypes
-          │
-          ▼
- Convert Alleles → Dosage (0,1,2)
-          │
-          ▼
- Compute Polygenic Score (PLS)
-          │
-          ▼
- Merge Phenotype Data
-          │
-          ▼
- Linear Regression
-          │
-          ▼
- Predict Lipid Content
-          │
-          ▼
- Count Beneficial Alleles
-          │
-          ▼
- Rank Breeding Lines
-          │
-          ▼
- Identify Top Candidates
-```
-
----
 
 # Features
 
@@ -212,22 +175,6 @@ All other lines are labeled **Low priority**.
 └── README.md
 ```
 
----
-
-# Methodology
-
-The Polygenic Score (PLS) is calculated as:
-
-\[
-PLS_i = \sum_{j=1}^{n} G_{ij} \times \beta_j
-\]
-
-where:
-
-- \(G_{ij}\) = allele dosage (0, 1, or 2)
-- \(\beta_j\) = GWAS effect size for SNP *j*
-
-The resulting PLS is then used as the predictor in a simple linear regression model to estimate lipid content.
 
 ---
 
@@ -237,16 +184,6 @@ The resulting PLS is then used as the predictor in a simple linear regression mo
 - numpy
 - scikit-learn
 
----
-
-# Future Improvements
-
-- Cross-validation for prediction accuracy
-- Multi-trait prediction
-- Genomic relationship matrix integration
-- Visualization of PLS distributions
-- Interactive reports
-- Support for VCF genotype files
 
 ---
 
