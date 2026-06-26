@@ -163,20 +163,6 @@ All other lines are labeled **Low priority**.
 
 ---
 
-# Project Structure
-
-```
-.
-├── PLS_Alleles_identification.py
-├── GWAS_SNP_gene_50kb.csv
-├── SAP.cleaned.hmp.txt
-├── Oil.phe
-├── lipid_analysis_final.csv
-└── README.md
-```
-
-
----
 
 # Dependencies
 
