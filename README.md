@@ -3,16 +3,6 @@
 
 A Python pipeline for identifying elite breeding lines using **Genome-Wide Association Study (GWAS)** results, **HapMap genotype data**, and **phenotypic lipid content**. The pipeline computes **Polygenic Scores (PLS)**, predicts lipid content, counts beneficial alleles, and ranks breeding lines for selection.
 
-------
-GWAS
-      \
-       \
-        --> PLS Calculation --> Beneficial Alleles --> Ranking --> Elite Lines
-       /
-HapMap/
-      \
-Phenotype
-
 
 -------
 ## Overview
