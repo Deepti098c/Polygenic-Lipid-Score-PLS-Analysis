@@ -1,4 +1,4 @@
-# Polygenic-Lipid-Score-PLS-Analysis
+
 # PLS-Based Allele Identification Pipeline
 
 A Python pipeline for identifying elite breeding lines using **Genome-Wide Association Study (GWAS)** results, **HapMap genotype data**, and **phenotypic lipid content**. The pipeline computes **Polygenic Scores (PLS)**, predicts lipid content, counts beneficial alleles, and ranks breeding lines for selection.
